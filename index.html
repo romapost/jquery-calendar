@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3>Booking</h3>
+    <div class="calendar-left">
+        <table></table>
+    </div>
+    <div class="calendar-right">
+        <form></form>
+        <h4>Order</h4>
+        <ul></ul>
+        <h4>Price <span calculate="price"></span></h4>
+        <div class="instructions">
+            <p>Please, mark the hours in the calender, on which you need an Interpreter.</p>
+            <p>First click on the calendar cell chooses 1 hour.
+                <br>Second click on the same cell chooses 0.5 hour.
+                <br>Third click unmarks the cell. </p>
+        </div>
+    </div>
+    
+    <script src="jquery.min.js"></script>
+    <script src="calendar.js"></script>
+    <script>
+        var result = {};
+        $('form').calendar({
+            table: 'div.calendar-left table',
+            list: 'div.calendar-right ul',
+            total: 'div.calendar-right span[calculate]',
+            totalString: '%totalprice% <i>for</i> %totalhours%',
+            startHour: 0,
+            endHour: 23,
+            result: result
+        });
+    </script>
+</body>
+
+</html>

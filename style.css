@@ -1,0 +1,55 @@
+table {
+    border-collapse: collapse;
+    float: left;
+    margin: 1rem;
+}
+caption {
+    margin: 0.5rem auto;
+}
+caption *:first-child {
+    float: left;
+}
+caption *:last-child {
+    float: right;
+}
+td {
+    width: 5rem;
+    border: 1px dashed black;
+    text-align: center;
+    vertical-align: middle;
+}
+td,
+th {
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+col.weekend {
+    background: rgba(200, 0, 0, 0.2);
+}
+col.today {
+    background: rgba(0, 200, 50, 0.2);
+}
+td.past {
+    background: rgba(100, 70, 20, 0.4);
+}
+td.checked {
+    background: rgba(250, 250, 0, 0.4);
+}
+td.checked-half {
+    background: linear-gradient(to top left, transparent 50%, rgba(250, 250, 50, 0.5) 50%);
+}
+td:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+td.checked:hover {
+    background: rgba(200, 200, 0, 0.3);
+}
+td.selected,
+td.selected:hover {
+    background: rgba(150, 150, 250, 0.4);
+}
