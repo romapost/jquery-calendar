@@ -2,7 +2,7 @@
 
 Creates schedule-like table that allows to choose the hours in a week.
 
-![screenshot](//github.com/romapost/jquery-calendar/blob/master/screenshot.png)
+![screenshot](https://github.com/romapost/jquery-calendar/blob/master/screenshot.png)
 
 ### Usage
 ```
